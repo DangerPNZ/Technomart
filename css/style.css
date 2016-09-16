@@ -241,7 +241,7 @@ nav a {
   font-size: 14px;
   text-transform: uppercase;
 }
-.product p {
+.product h1 {
   font-size: 18px;
   line-height: 20px;
   text-align: center;
@@ -472,4 +472,232 @@ footer {
 }
 .site a {
   color: #ffd180;
+}
+/* catalog */
+.shop_menu .basket_catalog {
+  background-color: #ee3643;
+}
+.login_catalog {
+  display: flex;
+  flex-wrap: wrap;
+  width: 314px;
+  justify-content: flex-end;
+  align-items: center;
+}
+.login_catalog input {
+  width: 299px;
+  padding: 0 46px;
+  outline: none;
+  border: none;
+}
+.user_menu {
+  display: flex;
+  margin-left: 0;
+}
+.login_catalog li:first-child {
+  list-style: none;
+  margin-left: -25px;
+  margin-right: 16px;
+}
+.login_catalog li {
+  color: #34425c;
+  margin-right: 16px;
+}
+.login_catalog a {
+  font-size: 10px;
+  background-color: inherit;
+  color: #32435f;
+  border: none;
+}
+.paginator {
+  display: flex;
+  flex-wrap: wrap;
+  width: 940px;
+  margin: 0 130px 20px 130px;
+}
+.paginator ul {
+  display: flex;
+}
+.paginator_caption {
+  display: flex;
+  width: 940px;
+  padding-left: 30px;
+  background-color: #f2f6f8;
+}
+.paginator_caption h1 {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+}
+main {
+  display: flex;
+  width: 1200px;
+  padding-left: 130px;
+  padding-right: 130px;
+}
+.filter {
+  display: flex;
+  flex-direction: column;
+  width: 240px;
+  padding-right: 20px;
+}
+.filter_title {
+  display: flex;
+  width: 220px;
+  padding-left: 20px;
+  background-color: #f7f3ec;
+  border-radius: 5%;
+}
+.filter_title h2 {
+  font-size: 13px;
+  line-height: 18px;
+}
+.filter_price {
+  display: flex;
+  flex-direction: column;
+}
+.range_controls {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 39px;
+  padding-bottom: 39px;
+  margin-bottom: 10px;
+  width: 220px;
+  background-color: #f7f3ec;
+  border-radius: 5%;
+}
+.scale {
+  display: flex;
+  height: 2px;
+  width: 170px;
+  background-color: #d7dcde;
+}
+.bar {
+  height: 2px;
+  width: 80%;
+  background-color: #00ca74;
+}
+.toogle {
+  position: absolute;
+  width: 4px;
+  height: 4px;
+  background-color: #ababab;
+  border: 8px solid #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 2px 0 0 #d4d1cb;
+  cursor: pointer;
+  box-sizing: content-box;
+}
+.toogle_min {
+  left: 25px;
+}
+.toogle_max {
+  left: 150px;
+}
+.price_controls {
+  display: flex;
+  width: 220px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+.price_controls input {
+  display: flex;
+  width: 95px;
+  font-size: 17px;
+  line-height: 18px;
+  border: none;
+  outline: none;
+  background-color: #f7f3ec;
+  border-radius: 5%;
+  text-align: center;
+}
+.hyphen {
+  display: flex;
+  width: 30px;
+  justify-content: center;
+}
+.manufacturer {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 20px;
+}
+.power_type {
+  display: flex;
+  flex-direction: column;
+  width: 220px;
+}
+.filter_btn {
+  width: 140px;
+  background-color: inherit;
+  border: 1px solid #e5e5e5;
+  border-radius: 5%;
+}
+.results {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 700px;
+}
+.sort_header {
+  display: flex;
+  justify-content: space-between;
+  width: 700px;
+  background-color: #f7f3ec;
+  border-radius: 4%;
+  padding-left: 19px;
+}
+.sort {
+  display: flex;
+  align-items: center;
+  font-size: 13px;
+  line-height: 18px;
+}
+.criteria {
+  display: flex;
+  margin: 0;
+}
+.criteria li {
+  margin-left: 71px;
+  list-style: none;
+}
+.criteria a {
+  font-size: 13px;
+  line-height: 18px;
+}
+.sort_direction {
+  display: flex;
+  width: 72px;
+  justify-content: space-between;
+}
+.sort_direction ul {
+  display: flex;
+  margin: 0;
+}
+.pages {
+  display: flex;
+  max-width: 700px;
+}
+.page {
+  display: flex;
+  margin: 0;
+}
+.page, li {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.page li {
+  margin-right: 10px;
+}
+.description_drills {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  padding-left: 130px;
+  padding-right: 130px;
+  background-color: #f2f6f8;
 }
