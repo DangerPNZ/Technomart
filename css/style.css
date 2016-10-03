@@ -1378,6 +1378,7 @@ main {
 }
 .scale {
   display: flex;
+  position: relative;
   height: 2px;
   width: 180px;
   background-color: #d7dcde;
@@ -1388,8 +1389,8 @@ main {
   background-color: #00ca74;
 }
 .toogle {
-  display: flex;
   position: absolute;
+  top: -8px;
   width: 4px;
   height: 4px;
   background-color: #ababab;
@@ -1400,10 +1401,10 @@ main {
   box-sizing: content-box;
 }
 .toogle_min {
-  left: 20px;
+  left: 0;
 }
 .toogle_max {
-  left: 160px;
+  left: 140px;
 }
 .price_controls {
   display: flex;
