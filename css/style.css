@@ -1161,9 +1161,13 @@ footer {
   position: relative;
   width: 299px;
   padding: 13px 46px 7px 47px;
+  background-color: #ffffff;
+}
+ .user_name .user {
   font-size: 21px;
   line-height: 18px;
-  background-color: #ffffff;
+  text-decoration: none;
+  color: #000000;
 }
 .login_catalog .login_descript_link {
   font-size: 0;
@@ -1374,7 +1378,6 @@ main {
 }
 .scale {
   display: flex;
-  position: relative;
   height: 2px;
   width: 180px;
   background-color: #d7dcde;
@@ -1385,6 +1388,7 @@ main {
   background-color: #00ca74;
 }
 .toogle {
+  display: flex;
   position: absolute;
   width: 4px;
   height: 4px;
