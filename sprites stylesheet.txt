@@ -1,0 +1,71 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-bucket {
+    width: 44px;
+    height: 65px;
+    background-position: -10px -10px;
+}
+
+.sprite-car {
+    width: 78px;
+    height: 63px;
+    background-position: -10px -95px;
+}
+
+.sprite-check {
+    width: 39px;
+    height: 30px;
+    background-position: -10px -178px;
+}
+
+.sprite-credit {
+    width: 465px;
+    height: 285px;
+    background-position: -10px -228px;
+}
+
+.sprite-drill {
+    width: 75px;
+    height: 61px;
+    background-position: -10px -533px;
+}
+
+.sprite-medal {
+    width: 389px;
+    height: 283px;
+    background-position: -10px -614px;
+}
+
+.sprite-new {
+    width: 60px;
+    height: 59px;
+    background-position: -10px -917px;
+}
+
+.sprite-pushcart {
+    width: 59px;
+    height: 72px;
+    background-position: -10px -996px;
+}
+
+.sprite-shadow {
+    width: 10px;
+    height: 272px;
+    background-position: -10px -1088px;
+}
+
+.sprite-tractor {
+    width: 78px;
+    height: 62px;
+    background-position: -10px -1380px;
+}
+
+.sprite-truck {
+    width: 468px;
+    height: 261px;
+    background-position: -10px -1462px;
+}
