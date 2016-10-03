@@ -1157,8 +1157,13 @@ footer {
   justify-content: flex-start;
   align-items: flex-end;
 }
-.login_catalog form {
+.user_name {
   position: relative;
+  width: 299px;
+  padding: 13px 46px 7px 47px;
+  font-size: 21px;
+  line-height: 18px;
+  background-color: #ffffff;
 }
 .login_catalog .login_descript_link {
   font-size: 0;
@@ -1166,7 +1171,7 @@ footer {
  .login_catalog .icon-user {
   position: absolute;
   top: 13px;
-  left: 17px;
+  left: 11px;
   width: 20px;
   height: 20px;
   font-size: 18px;
@@ -1177,7 +1182,7 @@ footer {
 .login_catalog .icon-logout {
  position: absolute;
  top: 11px;
- left: 270px;
+ left: 264px;
  width: 20px;
  height: 20px;
  font-size: 22px;
@@ -1185,17 +1190,10 @@ footer {
  z-index: 30;
  cursor: pointer;
 }
-.login_catalog input {
-  width: 299px;
-  padding: 10px 46px 11px 46px;
-  font-size: 21px;
-  line-height: 18px;
-  outline: none;
-  border: none;
-}
-.user_menu {
+.login_catalog .user_menu {
   display: flex;
-  margin: 0 0 0 6px;
+  align-self: flex-start;
+  margin: 1px 0 0 15px;
   padding: 0;
 }
 .login_catalog li {
@@ -1376,6 +1374,7 @@ main {
 }
 .scale {
   display: flex;
+  position: relative;
   height: 2px;
   width: 180px;
   background-color: #d7dcde;
