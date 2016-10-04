@@ -1030,6 +1030,29 @@ input[name="adv_radio"] {
 .contacts .mail:active {
   background-color: #ba2732;
 }
+.full_map {
+  display: none;
+  position: absolute;
+  top: 33px;
+  left: 50%;
+  margin-left: -470px;
+  width: 940px;
+  height: 446px;
+  background-image: url("../img/map_full.jpg");
+  box-shadow: 0 0 20px 3px #c4c3c4;
+}
+.full_map button {
+  position: absolute;
+  top: 5px;
+  right: -4px;
+  transform: rotate(45deg);
+  font-size: 60px;
+  color: #ee3643;
+  border: none;
+  outline: none;
+  background: none;
+  cursor: pointer;
+}
 .feedback {
   display: none;
   position: absolute;
