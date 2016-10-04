@@ -19,7 +19,7 @@
             </div>
             <form action="" method="get">
                 <a class="search_btn">Искать<span class="icon-search"></span></a>
-                <input type="search" name="search" value="Поиск:">
+                <input type="search" class="search" name="search" value="Поиск:">
             </form>
             <div class="shop_menu">
                 <a href="#" class="markers"><span class="icon-bookmark"></span>Закладки: 0</a>
@@ -64,7 +64,7 @@
                     <a href="#">Компания</a>
                 </li>
                 <li>
-                    <a href="#">Каталог</a>
+                    <a>Каталог</a>
                 </li>
                 <li>
                     <a href="#">Новости</a>
@@ -83,7 +83,7 @@
     </header>
     <section class="paginator">
         <div class="paginator_top">
-            <a href="#" class="index_link">Главая страница<span class="icon-home"></span></a>
+            <a href="index.html" class="index_link">Главая страница<span class="icon-home"></span></a>
             <ul class="paginator_list">
                 <li>
                     <a href="#">Каталог</a>
@@ -101,6 +101,16 @@
         </div>
     </section>
     <main>
+      <div class="add_product">
+        <div class="a_p_caption">
+          <button type="button">+</button>
+          <span>Toвap добавлен в корзину!</span>
+        </div>
+        <div class="a_p_control">
+          <a href="#">Оформить заказ</a>
+          <a href="#">Продолжить покупки</a>
+        </div>
+      </div>
         <aside class="filter">
             <div class="filter_title">
                 <h2>Фильтр:</h2>
@@ -125,9 +135,9 @@
             </div>
             <div class="manufacturer">
                 <h3>Производители:</h3>
-                <input type="checkbox" name="bosch" id="bosch" checked>
+                <input type="checkbox" name="bosch" id="bosch" checked disabled>
                 <label for="bosch">BOSCH</label>
-                <input type="checkbox" name="interskol" id="interskol">
+                <input type="checkbox" name="interskol" id="interskol" disabled>
                 <label for="interskol">ИНТЕРСКОЛ</label>
                 <input type="checkbox" name="makita" id="makita" checked>
                 <label for="makita">MAKITA</label>
@@ -152,23 +162,23 @@
                     <h2>Сортировка:</h2>
                     <ul class="criteria">
                         <li>
-                            <a href="#" class="sort_active">По цене</a>
+                            <a href="#">По цене</a>
                         </li>
                         <li>
-                            <a href="#" class="sort_stat">По типу</a>
+                            <a href="#" class="sort_inactive">По типу</a>
                         </li>
                         <li>
-                            <a href="#" class="sort_stat">По функционалу</a>
+                            <a href="#" class="sort_inactive">По функционалу</a>
                         </li>
                     </ul>
                 </div>
                 <div class="sort_direction">
                     <ul>
                         <li>
-                            <a href="#">Вверх<span class="active_arrow icon-up-dir"></span></a>
+                            <a href="#">Вверх<span class="icon-up-dir"></span></a>
                         </li>
                         <li>
-                            <a href="#">Вниз<span class="icon-down-dir"></span></a>
+                            <a href="#">Вниз<span class="inactive_arrow icon-down-dir"></span></a>
                         </li>
                     </ul>
                 </div>
@@ -245,13 +255,13 @@
             <div class="pages">
                 <ul class="page">
                     <li>
-                        <a href="#" class="list_active">1</a>
+                        <a class="list_active">1</a>
                     </li>
                     <li>
-                        <a href="#" class="list_stat">2</a>
+                        <a href="#" class="list_inactive">2</a>
                     </li>
                     <li>
-                        <a href="#" class="list_stat">3</a>
+                        <a href="#" class="list_inactive">3</a>
                     </li>
                 </ul>
                 <a href="#" class="list_next">Следующая</a>
@@ -284,7 +294,7 @@
                         <a href="#">Новости</a>
                     </li>
                     <li>
-                        <a href="#">Каталог</a>
+                        <a>Каталог</a>
                     </li>
                     <li>
                         <a href="#">Доставка</a>
