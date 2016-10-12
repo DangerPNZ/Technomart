@@ -11,6 +11,7 @@ var input_mail = feedback_open.querySelector("#mail");
 var feedback_textarea = feedback_open.querySelector("textarea");
 
 var buy_link = document.querySelectorAll(".buy");
+console.log(buy_link.length);
 
 map_link.addEventListener("click", function(event) {
   event.preventDefault();
@@ -49,7 +50,8 @@ feedback_form.addEventListener("submit", function(event) {
   event.preventDefault();
   }
 });
-
+/*
 buy_link.addEventListener("click", function(event) {
   event.preventDefault();
 });
+*/

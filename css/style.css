@@ -1032,10 +1032,10 @@ input[name="adv_radio"] {
   border-radius: 3px;
   color: #ffffff;
 }
-.contacts .mail:hover {
+.contacts .link_mail:hover {
   background-color: #ca2c37;
 }
-.contacts .mail:active {
+.contacts .link_mail:active {
   background-color: #ba2732;
 }
 .full_map {
@@ -1051,6 +1051,11 @@ input[name="adv_radio"] {
 }
 .full_map_show {
   display: flex;
+  animation: map_show 0.6s;
+}
+@keyframes map_show {
+  0% {transform: scale(0.0) translateX(1000px)};
+  100% {transform: scale(1.0)};
 }
  .btn_close {
   position: absolute;
@@ -1093,6 +1098,11 @@ input[name="adv_radio"] {
 }
 .feedback_show {
   display: flex;
+  animation: feedback_show 0.7s;
+}
+@keyframes feedback_show {
+  0% {transform: scale(0.0) rotate(360deg)};
+  100% {transform: scale(1.2)};
 }
 .feedback label {
   font-size: 18px;
