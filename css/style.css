@@ -126,10 +126,9 @@ p {
   position: relative;
 }
 .search {
-  width: 272px;
+  width: 270px;
   font-size: 17px;
   line-height: 18px;
-  margin-left: -3px;
   padding: 12px 0 12px 49px;
   color: #ffffff;
   background-color: #293449;
@@ -157,8 +156,11 @@ p {
   z-index: 30;
   cursor: pointer;
 }
-.header_top .icon-search:hover {
+.search:hover + a .icon-search {
   color: #ffffff;
+}
+.search:focus + a .icon-search {
+  color: #ee3643;
 }
 .shop_menu {
   display: flex;
@@ -839,7 +841,7 @@ nav {
   content: "";
   display: flex;
   position: absolute;
-  top: -40px;
+  top: -43px;
   right: 0px;
   width: 10px;
   height: 272px;
@@ -935,6 +937,12 @@ input[name="adv_radio"] {
   color: #ffffff;
   text-transform: uppercase;
 }
+.adv_slide a:hover {
+  background-color: #ca2c37;
+}
+.adv_slide a:active {
+  background-color: #ba2732;
+}
 #advantages_delivery:checked ~ .adv_slider .adv_slide:nth-child(1) {
   display: flex;
 }
@@ -1011,9 +1019,9 @@ input[name="adv_radio"] {
   width: 190px;
   padding: 30px 0 30px 0;
 }
-.contacts .mail {
+.contacts .link_mail {
   display: flex;
-  align-items: center;
+  justify-content: center;
   text-transform: uppercase;
   width: 300px;
   background-color: #ee3643;
@@ -1041,17 +1049,37 @@ input[name="adv_radio"] {
   background-image: url("../img/map_full.jpg");
   box-shadow: 0 0 20px 3px #c4c3c4;
 }
-.full_map button {
+.full_map_show {
+  display: flex;
+}
+ .btn_close {
   position: absolute;
-  top: 5px;
-  right: -4px;
-  transform: rotate(45deg);
-  font-size: 60px;
-  color: #ee3643;
+  top: 7px;
+  right: 7px;
+  width: 25px;
+  height: 25px;
   border: none;
   outline: none;
   background: none;
   cursor: pointer;
+  z-index: 50;
+}
+.btn_close::after,
+.btn_close::before {
+  content: "";
+  display: flex;
+  position: absolute;
+  top: 10px;
+  left: 0px;
+  width: 25px;
+  height: 5px;
+  background-color: #ee3643;
+}
+.btn_close::after {
+  transform: rotate(45deg);
+}
+.btn_close::before {
+  transform: rotate(-45deg);
 }
 .feedback {
   display: none;
@@ -1062,6 +1090,9 @@ input[name="adv_radio"] {
   width: 620px;
   box-shadow: 0 -7px 0 0 #ee3643,
               0 15px 34px 0 #121821;
+}
+.feedback_show {
+  display: flex;
 }
 .feedback label {
   font-size: 18px;
@@ -1074,18 +1105,6 @@ input[name="adv_radio"] {
   background-color: #ffffff;
   width: 620px;
   padding: 43px 80px 37px 80px;
-}
-.entry_field button {
-  position: absolute;
-  top: 5px;
-  right: -4px;
-  transform: rotate(45deg);
-  font-size: 60px;
-  color: #ee3643;
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
 }
 .short_area {
   display: flex;
@@ -1100,6 +1119,9 @@ input[name="adv_radio"] {
   padding: 5px 2px 5px 15px;
   outline: none;
 }
+.short_area input:focus {
+  border-color: #bdc6ca;
+}
 .message {
   display: flex;
   flex-direction: column;
@@ -1111,12 +1133,16 @@ input[name="adv_radio"] {
   margin: 7px 0 0 0;
   padding: 5px 2px 9px 15px;
   outline: none;
+  resize: none;
+}
+.message textarea:focus {
+  border-color: #bdc6ca;
 }
 .submit_area {
   padding: 37px 80px;
   background-color: #f1f1f1;
 }
-.submit_area button {
+.submit_area .submit_btn {
   width: 460px;
   background-color: #ee3643;
   color: #ffffff;
@@ -1128,6 +1154,9 @@ input[name="adv_radio"] {
   border: none;
   outline: none;
   text-transform: uppercase;
+}
+.submit_btn:hover {
+  background-color: #ca2c37;
 }
 footer {
   display: flex;
@@ -1372,7 +1401,7 @@ footer {
 .login_catalog li:nth-child(2) {
   display: list-item;
   list-style-type: disc;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 18px;
   color: #32425c;
 }
@@ -1464,17 +1493,8 @@ main {
               0 15px 40px 0 #787f8c;
   z-index: 30;
 }
-.add_product button {
-  position: absolute;
-  top: 5px;
-  right: -4px;
-  transform: rotate(45deg);
-  font-size: 60px;
-  color: #ee3643;
-  border: none;
-  outline: none;
-  background: none;
-  cursor: pointer;
+.add_product_show {
+  display: flex;
 }
 .a_p_caption {
   display: flex;
@@ -1530,9 +1550,15 @@ main {
   color: #ffffff;
   background-color: #ee3643;
 }
+.a_p_control a:first-child:hover {
+  background-color: #ca2c37;
+}
 .a_p_control a:nth-child(2) {
   color: #000000;
   background-color: #ffffff;
+}
+.a_p_control a:nth-child(2):hover {
+  color: #ee3643;
 }
 .filter {
   display: flex;
@@ -1733,7 +1759,10 @@ main {
   outline: none;
 }
 .filter_btn:hover {
-  border-color: #ee3643;
+  border-color: #bdc6ca;
+}
+.filter_btn:active {
+  border-color: #ee3744;
 }
 .results {
   display: flex;

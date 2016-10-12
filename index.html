@@ -6,7 +6,8 @@
     <title>ТЕХНОМАРТ главная</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic">
 </head>
 
 <body>
@@ -17,9 +18,9 @@
                   <a>Техномарт</a>
                 </h2>
             </div>
-            <form action="" method="get">
-              <a class="search_btn">Искать<span class="icon-search"></span></a>
-              <input type="search" class="search" name="search" value="Поиск:">
+            <form action="#" method="get">
+                <input type="search" class="search" name="search" value="Поиск:">
+                <a class="search_btn">Искать<span class="icon-search"></span></a>
             </form>
             <div class="shop_menu">
                 <a href="#" class="markers"><span class="icon-bookmark"></span>Закладки: 0</a>
@@ -204,23 +205,23 @@
                         <label for="advantages_credit"><a>Кредит</a></label>
                     </li>
                 </ul>
-              <div class="adv_slider">
-                <div class="adv_slide">
-                    <h3>Доставка</h3>
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
-                    <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                <div class="adv_slider">
+                    <div class="adv_slide">
+                        <h3>Доставка</h3>
+                        <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!</p>
+                        <p>Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
+                    </div>
+                    <div class="adv_slide">
+                        <h3>Гарантия</h3>
+                        <p>Если купленый у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
+                        <p>Дом уж восстановите как-нибудь сами.</p>
+                    </div>
+                    <div class="adv_slide">
+                        <h3>Кредит</h3>
+                        <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
+                        <a href="#">Отправить заявку</a>
+                    </div>
                 </div>
-                <div class="adv_slide">
-                    <h3>Гарантия</h3>
-                    <p>Если купленый у нас товар поломается или заискрит, а также в случае пожара, спровоцированного его возгоранием, вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.</p>
-                    <p>Дом уж восстановите как-нибудь сами.</p>
-                </div>
-                <div class="adv_slide">
-                    <h3>Кредит</h3>
-                    <p>Залезть в долговую яму стало проще! Кредитные консультанты придут вам на помощь.</p>
-                    <a>Отправить заявку</a>
-                </div>
-              </div>
             </div>
         </div>
     </section>
@@ -239,33 +240,37 @@
         <div class="contacts">
             <h2>Контакты</h2>
             <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-            <a href="#" class="map"><img src="./img/map.jpg" alt="Карта" height="158" width="300"></a>
-            <a href="#" class="mail">Заблудились? Напишите нам!</a>
+            <a href="map.html" class="map"><img src="./img/map.jpg" alt="Карта" height="158" width="300" title="Развернуть карту"></a>
+            <a href="feedback.html" class="link_mail">Заблудились? Напишите нам!</a>
         </div>
         <div class="full_map">
-          <button type="button">+</button>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2250916728667!2d30.317310875860997!3d59.93883910214295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x636b188156795e04!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8!5e0!3m2!1sru!2sru!4v1475582857983" width="940" height="466" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <button type="button" title="Закрыть" class="btn_close"></button>
+<!-- Раскомментировать для подключения интерактивной карты Google
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3361.2250916728667!2d30.317310875860997!3d59.93883910214295!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x636b188156795e04!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8!5e0!3m2!1sru!2sru!4v1475582857983"
+                width="940" height="446" style="border:0" allowfullscreen></iframe>
+-->
         </div>
         <div class="feedback">
-          <form action="" method="post">
-            <div class="entry_field">
-              <button type="button">+</button>
-          <div class="short_area">
-            <label for="name">Ваше имя:</label>
-            <input type="text" name="" placeholder="Представьтесь, пожалуйста" id="name">
-          </div>
-          <div class="short_area">
-            <label for="mail">Ваш e-mail:</label>
-            <input type="text" name="" placeholder="Для отправки ответа" id="mail">
-          </div>
-          <div class="message">
-            <label for="text_message">Текст письма:</label>
-            <textarea rows="4" placeholder="В свободной форме" id="message"></textarea>
-          </div>
-        </div>
-          <div class="submit_area">
-            <button type="submit">Отправить</button>
-          </div>
+            <button type="button" title="Закрыть" class="btn_close"></button>
+            <form action="#" method="post">
+                <div class="entry_field">
+                    <div class="short_area">
+                        <label for="name">Ваше имя:</label>
+                        <input type="text" name="user_name" placeholder="Представьтесь, пожалуйста" id="name">
+                    </div>
+                    <div class="short_area">
+                        <label for="mail">Ваш e-mail:</label>
+                        <input type="text" name="message" placeholder="Для отправки ответа" id="mail">
+                    </div>
+                    <div class="message">
+                        <label for="text_message">Текст письма:</label>
+                        <textarea rows="4" placeholder="В свободной форме" id="text_message"></textarea>
+                    </div>
+                </div>
+                <div class="submit_area">
+                    <button type="submit" class="submit_btn" title="Убедитесь, что заполнены все поля!">Отправить</button>
+                </div>
+            </form>
         </div>
     </section>
     <footer>
@@ -333,6 +338,8 @@
             </div>
         </div>
     </footer>
+    
+<script src="./js/script.js"></script>
 
 </body>
 

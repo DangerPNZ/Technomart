@@ -6,7 +6,8 @@
     <title>ТЕХНОМАРТ каталог</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i|PT+Sans:400,700&subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700,700i&subset=cyrillic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=cyrillic">
 </head>
 
 <body>
@@ -17,9 +18,9 @@
           <a href="index.html">Техномарт</a>
         </h2>
             </div>
-            <form action="" method="get">
-                <a class="search_btn">Искать<span class="icon-search"></span></a>
+            <form action="#" method="get">
                 <input type="search" class="search" name="search" value="Поиск:">
+                <a class="search_btn">Искать<span class="icon-search"></span></a>
             </form>
             <div class="shop_menu">
                 <a href="#" class="markers"><span class="icon-bookmark"></span>Закладки: 0</a>
@@ -37,13 +38,13 @@
             </div>
             <div class="h_m_block login_catalog">
                 <div class="user_name">
-                      <a class="login_descript_link">Открыть профиль
+                    <a class="login_descript_link">Открыть профиль
                         <span class="icon-user"></span>
                 </a>
-                <a class="login_descript_link">Выход, деавторизация
+                    <a class="login_descript_link">Выход, деавторизация
                         <span class="icon-logout"></span>
                       </a>
-                      <a href="#" class="user">Равшан Джамшутович</a>
+                    <a href="#" class="user">Равшан Джамшутович</a>
                 </div>
                 <ul class="user_menu">
                     <li>
@@ -101,30 +102,30 @@
         </div>
     </section>
     <main>
-      <div class="add_product">
-        <div class="a_p_caption">
-          <button type="button">+</button>
-          <span>Toвap добавлен в корзину!</span>
+        <div class="add_product">
+            <div class="a_p_caption">
+                <button type="button" title="Закрыть" class="btn_close"></button>
+                <span>Toвap добавлен в корзину!</span>
+            </div>
+            <div class="a_p_control">
+                <a href="#">Оформить заказ</a>
+                <a href="#">Продолжить покупки</a>
+            </div>
         </div>
-        <div class="a_p_control">
-          <a href="#">Оформить заказ</a>
-          <a href="#">Продолжить покупки</a>
-        </div>
-      </div>
         <aside class="filter">
             <div class="filter_title">
                 <h2>Фильтр:</h2>
             </div>
+            <form action="#" method="get">
             <div class="filter_price">
                 <h3>Цена:</h3>
                 <div class="range_controls">
                     <div class="scale">
                         <div class="bar"></div>
-                    <div class="toogle toogle_min"></div>
-                    <div class="toogle toogle_max"></div>
+                        <div class="toogle toogle_min"></div>
+                        <div class="toogle toogle_max"></div>
                     </div>
                 </div>
-                <form>
                     <div class="price_controls">
                         <input type="text" name="min-price" value="0">
                         <div class="hyphen">
@@ -341,8 +342,10 @@
                     <a href="#">htmlacademy.ru</a>
                 </div>
             </div>
+        </div>
     </footer>
 
+<script src="./js/script.js"></script>
 
 </body>
 
