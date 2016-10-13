@@ -51,7 +51,6 @@ window.addEventListener("keydown", function(event) {
     }
 });
 
-
 window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {
         if (feedback_open.classList.contains("feedback_show")) {
@@ -60,8 +59,8 @@ window.addEventListener("keydown", function(event) {
     }
 });
 
-/*
-buy_link.addEventListener("click", function(event) {
-  event.preventDefault();
-});
-*/
+for(var i=0; i<buy_link.length; i++) {
+	buy_link[i].addEventListener("click", function(event) {
+  		event.preventDefault();
+	});
+}

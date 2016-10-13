@@ -93,6 +93,7 @@ a {
 }
 header {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   font-family: "Cuprum", "Arial", sans-serif;
   width: 100%;
