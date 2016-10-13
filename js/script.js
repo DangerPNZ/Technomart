@@ -1,6 +1,12 @@
 var map_link = document.querySelector(".map");
 var map_expand = document.querySelector(".full_map");
-var map_close = map_expand.querySelector(".btn_close");
+if(map_expand) {
+	var map_close = map_expand.querySelector(".btn_close");
+  map_close.addEventListener("click", function(event) {
+  event.preventDefault();
+  map_expand.classList.remove("full_map_show");
+});
+}
 
 var feedback_link = document.querySelector(".link_mail");
 var feedback_open = document.querySelector(".feedback");
