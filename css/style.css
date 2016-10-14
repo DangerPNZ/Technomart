@@ -1172,7 +1172,7 @@ input[name="adv_radio"] {
 footer {
   display: flex;
   flex-wrap: wrap;
-  width: 100%;
+  max-width: 100%;
 }
 .f_cyan {
   display: flex;
