@@ -41,7 +41,6 @@ if (feedback_open) {
 }
 
 var buy_link = document.querySelectorAll(".buy");
-console.log(buy_link.length);
 
 window.addEventListener("keydown", function(event) {
     if (event.keyCode === 27) {

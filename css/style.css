@@ -1176,6 +1176,7 @@ footer {
 }
 .f_cyan {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   width: 100%;
   background-color: #32425c;
