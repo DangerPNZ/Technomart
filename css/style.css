@@ -191,8 +191,9 @@ p {
 }
 .markers .icon-bookmark {
   position: absolute;
-  top: 12px;
+  top: 50%;
   left: 11px;
+  margin-top: -10px;
   width: 20px;
   height: 20px;
   font-size: 17px;
@@ -207,8 +208,9 @@ p {
 }
 .basket .icon-basket {
   position: absolute;
-  top: 12px;
+  top: 50%;
   left: 11px;
+  margin-top: -10px;
   width: 20px;
   height: 20px;
   font-size: 17px;
@@ -1099,11 +1101,11 @@ input[name="adv_radio"] {
 }
 .feedback_show {
   display: flex;
-  animation: feedback_show 0.7s;
+  animation: feedback_show 0.5s;
 }
 @keyframes feedback_show {
-  0% {transform: scale(0.0) rotate(360deg)};
-  100% {transform: scale(1.2)};
+  0% {transform: scale(0.0) translateX(1500px) translateY(500px)};
+  100% {transform: scale(1.0) translateX(0px) translateY(0px)};
 }
 .feedback label {
   font-size: 18px;
