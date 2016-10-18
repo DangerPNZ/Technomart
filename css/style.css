@@ -1278,6 +1278,8 @@ footer {
   justify-content: flex-end;
   flex-wrap: wrap;
   width: 610px;
+  margin: 0;
+  padding: 0;
 }
 .f_middle_menu li {
   display: flex;
