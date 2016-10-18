@@ -379,7 +379,8 @@ nav {
   margin: 20px 0;
 }
 .offer:nth-child(5) {
-  margin: 0;
+  margin-top: 0;
+  margin-left: 20px;
 }
 .offer:nth-child(6) {
   position: absolute;
