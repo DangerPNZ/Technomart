@@ -1,3 +1,21 @@
+var left_btn = document.querySelector(".icon-left");
+var right_btn = document.querySelector(".icon-right");
+var slide_1 = document.querySelector("#perforators_show");
+var slide_2 = document.querySelector("#drills_show");
+
+if (left_btn) {
+  left_btn.addEventListener("click", function(event) {
+  event.preventDefault();
+  slide_1.checked = true;
+});
+}
+if (right_btn) {
+  right_btn.addEventListener("click", function(event) {
+    event.preventDefault();
+    slide_2.checked = true;
+  });  
+}
+
 var map_link = document.querySelector(".map");
 var map_expand = document.querySelector(".full_map");
 if (map_expand) {
@@ -39,16 +57,21 @@ if (feedback_open) {
     feedback_close.addEventListener("click", function(event) {
         event.preventDefault();
         feedback_open.classList.remove("feedback_show");
+        feedback_open.classList.remove("feedback_send_error");
     });
     feedback_form.addEventListener("submit", function(event) {
         if (!input_name.value || !input_mail.value || !feedback_textarea.value) {
             event.preventDefault();
+            feedback_open.classList.remove("feedback_send_error");
+            feedback_open.offsetWidth = feedback_open.offsetWidth;
+            feedback_open.classList.add("feedback_send_error");
         }
     });
     window.addEventListener("keydown", function(event) {
         if (event.keyCode === 27) {
             if (feedback_open.classList.contains("feedback_show")) {
                 feedback_open.classList.remove("feedback_show");
+                feedback_open.classList.remove("feedback_send_error");
             }
         }
     });
