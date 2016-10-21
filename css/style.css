@@ -102,6 +102,10 @@ header {
 p {
   margin: 0;
 }
+img {
+  max-width: 100%;
+  height: auto;
+}
 .header_top {
   display: flex;
   justify-content: center;
@@ -692,6 +696,9 @@ nav {
   background-position: -10px -917px;
 }
 .product img {
+  display: flex;
+  width: 218px;
+  height: 150px;
   margin-bottom: 29px;
 }
 .product a {
@@ -763,7 +770,7 @@ nav {
   line-height: 18px;
 }
 .old_price {
-  padding-top: 10px;
+  padding-top: 9px;
   text-decoration: line-through;
   color: #999999;
 }
@@ -801,6 +808,10 @@ nav {
   justify-content: space-between;
   width: 940px;
   margin: 0 auto 86px auto;
+}
+.manufacturers img {
+  width: 218px;
+  height: 143px;
 }
 .manufacturers .brand {
   display: flex;
@@ -1042,6 +1053,10 @@ input[name="adv_radio"] {
 .contacts p {
   width: 190px;
   padding: 30px 0 30px 0;
+}
+.contacts img {
+  width: 300px;
+  height: 158px;
 }
 .contacts .link_mail {
   display: flex;
