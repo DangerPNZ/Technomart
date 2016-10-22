@@ -681,7 +681,7 @@ nav {
   width: 220px;
   border: 1px solid #e5e5e5;
   margin-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 }
 .product:hover {
   box-shadow: 0 8px 25px 3px #c5c5c5;
@@ -1839,7 +1839,6 @@ main {
 }
 .results {
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
   width: 700px;
 }
@@ -1909,6 +1908,12 @@ main {
 }
 .sort_direction .inactive_arrow:hover {
   color: #000000;
+}
+.catalog_items {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 700px;
 }
 .pages {
   display: flex;
