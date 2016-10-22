@@ -129,6 +129,8 @@ img {
 }
 .header_top form {
   position: relative;
+  width: 270px;
+  height: 20px;
 }
 .search {
   width: 270px;
@@ -194,8 +196,8 @@ img {
 .markers .icon-bookmark {
   position: absolute;
   top: 50%;
-  left: 11px;
-  margin-top: -9px;
+  left: 13px;
+  margin-top: -10px;
   width: 20px;
   height: 20px;
   font-size: 17px;
@@ -211,8 +213,8 @@ img {
 .basket .icon-basket {
   position: absolute;
   top: 50%;
-  left: 11px;
-  margin-top: -9px;
+  left: 13px;
+  margin-top: -10px;
   width: 20px;
   height: 20px;
   font-size: 17px;
@@ -226,7 +228,7 @@ img {
   color: #8b8e94;
 }
 .shop_menu .checkout {
-  padding: 12px 5px 10px 18px;
+  padding: 12px 5px 10px 20px;
   background-color: #63a63e;
 }
 .shop_menu .checkout:hover {
@@ -655,13 +657,13 @@ nav {
 .field_title a {
   display: flex;
   justify-content: center;
-  align-self: center;
   width: 253px;
   background-color: #ee3643;
   border-radius: 4px;
   font-size: 14px;
   line-height: 18px;
-  padding: 10px 0;
+  padding: 10px;
+  margin: 25px 0;
   color: #ffffff;
   text-transform: uppercase;
 }
@@ -679,7 +681,7 @@ nav {
   width: 220px;
   border: 1px solid #e5e5e5;
   margin-top: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 }
 .product:hover {
   box-shadow: 0 8px 25px 3px #c5c5c5;
@@ -696,7 +698,6 @@ nav {
   background-position: -10px -917px;
 }
 .product img {
-  display: flex;
   width: 218px;
   height: 150px;
   margin-bottom: 29px;
@@ -744,7 +745,7 @@ nav {
   color: #32425c;
   border: 3px solid #63a63e;
   border-radius: 4px;
-  margin: 11px 0 53px 0;
+  margin: 11px 0 53.3px 0;
   padding: 5px 0 3px 0;
 }
 .add:hover {
@@ -770,7 +771,7 @@ nav {
   line-height: 18px;
 }
 .old_price {
-  padding-top: 9px;
+  padding-top: 10px;
   text-decoration: line-through;
   color: #999999;
 }
