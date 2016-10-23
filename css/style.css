@@ -703,8 +703,9 @@ nav {
   background-position: -10px -917px;
 }
 */
+
 .product_image {
-  padding-bottom: 24px;
+  position: absolute;
 }
 .product_image img {
   width: 218px;
@@ -717,6 +718,7 @@ nav {
   display: none;
   flex-direction: column;
   align-items: center;
+  position: absolute;
   width: 100%;
   padding: 43px 0 61.4px 0;
 }
@@ -777,6 +779,7 @@ nav {
   font-size: 18px;
   line-height: 20px;
   min-height: 20px;
+  margin-top: 179px;
   text-align: center;
   text-transform: none;
 }
