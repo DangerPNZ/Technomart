@@ -706,6 +706,9 @@ nav {
 
 .product_image {
   position: absolute;
+  top: 110px;
+  left: 50%;
+  margin: -109px;
 }
 .product_image img {
   width: 218px;
