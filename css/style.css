@@ -682,14 +682,15 @@ nav {
   line-height: 20px;
   border: 1px solid #e5e5e5;
   margin-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 21px;
 }
-/*
 .product:hover {
   box-shadow: 0 8px 25px 3px #c5c5c5;
 }
 .new_product {
-
+  position: absolute;
+  width: 100%;
+  font-size: 0;
 }
 .new_product::before {
   content: "";
@@ -701,9 +702,8 @@ nav {
   height: 59px;
   background-image: url("../img/sprites.png");
   background-position: -10px -917px;
+  z-index: 30;
 }
-*/
-
 .product_image {
   position: absolute;
   top: 110px;
@@ -723,7 +723,9 @@ nav {
   align-items: center;
   position: absolute;
   width: 100%;
-  padding: 43px 0 61.4px 0;
+  left: 50%;
+  margin-left: -109px;
+  padding: 43px 0 62px 0;
 }
 .product:hover .product_controls {
   display: flex;
@@ -741,7 +743,7 @@ nav {
   background-color: #63a63e;
   border-radius: 4px;
   box-shadow: 0 3px 0 0 #367315;
-  padding: 8px 0 3px 48px;
+  padding: 10px 0 6px 48px;
   margin-bottom: 11px;
 }
 .buy:hover {
@@ -766,7 +768,7 @@ nav {
   color: #32425c;
   border: 3px solid #63a63e;
   border-radius: 4px;
-  padding: 5px 0 3px 0;
+  padding: 7px 0 6px 0;
 }
 .add:hover {
   border-color: #32425c;
@@ -786,7 +788,6 @@ nav {
   text-align: center;
   text-transform: none;
 }
-/*
 .product span {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -814,7 +815,7 @@ nav {
   background-color: #ee3643;
   border-radius: 3px;
   color: #ffffff;
-  margin-top: 38px;
+  margin-top: 40px;
 }
 .new_price::after, .new_article_price::after  {
   content: "";
@@ -826,7 +827,6 @@ nav {
   border: 19px solid #ffffff;
   border-left-color: #ee3643;
 }
-*/
 .manufacturers {
   display: flex;
   flex-wrap: wrap;
@@ -1159,6 +1159,7 @@ input[name="adv_radio"] {
   width: 620px;
   box-shadow: 0 -7px 0 0 #ee3643,
               0 15px 34px 0 #121821;
+  z-index: 50;
 }
 .feedback_show {
   display: flex;
@@ -1581,7 +1582,7 @@ main {
   width: 620px;
   box-shadow: 0 -7px 0 0 #ee3643,
               0 15px 40px 0 #787f8c;
-  z-index: 30;
+  z-index: 50;
 }
 .add_product_show {
   display: flex;
@@ -1863,6 +1864,7 @@ main {
 }
 .results {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
   width: 700px;
 }
@@ -1932,12 +1934,6 @@ main {
 }
 .sort_direction .inactive_arrow:hover {
   color: #000000;
-}
-.catalog_items {
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  width: 700px;
 }
 .pages {
   display: flex;
