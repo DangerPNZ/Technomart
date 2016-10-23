@@ -679,12 +679,17 @@ nav {
   align-items: center;
   position: relative;
   width: 220px;
+  line-height: 20px;
   border: 1px solid #e5e5e5;
   margin-top: 20px;
-  padding-bottom: 21px;
+  padding-bottom: 20px;
 }
+/*
 .product:hover {
   box-shadow: 0 8px 25px 3px #c5c5c5;
+}
+.new_product {
+
 }
 .new_product::before {
   content: "";
@@ -697,23 +702,33 @@ nav {
   background-image: url("../img/sprites.png");
   background-position: -10px -917px;
 }
-.product img {
+*/
+.product_image {
+  padding-bottom: 24px;
+}
+.product_image img {
   width: 218px;
   height: 150px;
-  margin-bottom: 29px;
+}
+.product:hover .product_image {
+  display: none;
+}
+.product_controls {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 43px 0 61.4px 0;
+}
+.product:hover .product_controls {
+  display: flex;
 }
 .product a {
-  display: none;
   width: 135px;
   font-family: "Cuprum", "Arial", sans-serif;
   font-size: 14px;
+  line-height: 20px;
   text-transform: uppercase;
-}
-.product:hover img {
-  display: none;
-}
-.product:hover a {
-  display: flex;
 }
 .buy {
   position: relative;
@@ -721,8 +736,8 @@ nav {
   background-color: #63a63e;
   border-radius: 4px;
   box-shadow: 0 3px 0 0 #367315;
-  margin: 43px 0 0 0;
   padding: 8px 0 3px 48px;
+  margin-bottom: 11px;
 }
 .buy:hover {
   background-color: #5fbb2d;
@@ -741,11 +756,11 @@ nav {
   color: #ffffff;
 }
 .add {
+  display: flex;
   justify-content: center;
   color: #32425c;
   border: 3px solid #63a63e;
   border-radius: 4px;
-  margin: 11px 0 53.3px 0;
   padding: 5px 0 3px 0;
 }
 .add:hover {
@@ -761,9 +776,11 @@ nav {
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
+  min-height: 20px;
   text-align: center;
   text-transform: none;
 }
+/*
 .product span {
   font-family: "PT Sans", "Arial", sans-serif;
   font-weight: 700;
@@ -803,6 +820,7 @@ nav {
   border: 19px solid #ffffff;
   border-left-color: #ee3643;
 }
+*/
 .manufacturers {
   display: flex;
   flex-wrap: wrap;
