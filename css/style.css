@@ -687,11 +687,6 @@ nav {
 .product:hover {
   box-shadow: 0 8px 25px 3px #c5c5c5;
 }
-.new_product {
-  position: absolute;
-  width: 100%;
-  font-size: 0;
-}
 .new_product::before {
   content: "";
   display: flex;
